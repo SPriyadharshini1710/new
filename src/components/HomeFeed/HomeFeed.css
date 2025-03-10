@@ -1,0 +1,52 @@
+/* Full height layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevents double scroll */
+}
+
+/* Fixed header at top */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Content area takes full space */
+.content {
+  display: flex;
+  flex: 1;
+  padding-top: 70px; /* Adjust based on header height */
+  padding-bottom: 50px; /* Adjust to avoid footer overlap */
+  overflow-y: auto; /* Allow scrolling for content */
+}
+
+/* Sidebar and main feed layout */
+.feed {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Post grid (YouTube-like layout) */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Fixed footer at bottom */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

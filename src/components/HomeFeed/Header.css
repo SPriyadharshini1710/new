@@ -1,0 +1,159 @@
+.header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;  /* Ensure full width */
+    box-sizing: border-box;  /* Prevents padding from affecting width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 22px;  /* Slightly larger title */
+    margin: 0;
+    flex-grow: 1;  /* Pushes icons to the right */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;  /* Adjusted spacing */
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+
+.bell-icon {
+    font-size: 22px;  /* Slightly larger bell icon */
+    color: white;
+}
+
+.notification-count {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 5px;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+.profile {
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-icon {
+    font-size: 24px;  /* Slightly larger profile icon */
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+/* Profile Popup Styling */
+.profile-popup {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    z-index: 2000;
+    text-align: center;
+}
+
+.profile-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-content p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.profile-content button {
+    width: 100%;
+    padding: 7px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.profile-content button:hover {
+    background: white;
+    color: #007bff;
+    border: 2px solid #007bff; 
+}
+
+.profile-popup {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .profile-content input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile-content button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-content button:hover {
+    background: #0056b3;
+  }
+  
+
+/* Profile content styling */
+.profile-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.profile-content p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+ 
